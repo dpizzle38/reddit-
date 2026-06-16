@@ -45,7 +45,8 @@ const postsSlice = createSlice({
         state.items = action.payload;
       });
       
-  }
+  },
 });
 
+export const{clearPosts} = postsSlice.actions
 export default postsSlice.reducer;
