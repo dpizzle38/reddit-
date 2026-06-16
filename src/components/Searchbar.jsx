@@ -13,7 +13,7 @@ export default function Searchbar (){
     }
    return(
   <form>
-    <input type="text" value ={value} onChange={(e)=>setValue(e.target.value)}/>
+    <input type="text" placeholder="Search Reddit..." value ={value} onChange={(e)=>setValue(e.target.value)}/>
     <button type={submit}>Search</button>
   </form>
    )
