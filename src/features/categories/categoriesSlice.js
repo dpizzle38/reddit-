@@ -7,7 +7,7 @@ const categoriesSlice = createSlice({
     initialState : {
         selected : 'popular',
     },
-    reducer: {
+    reducers: {
       setCategory : (state, action) =>{
         state.selected = action.payload
       }
