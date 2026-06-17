@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skeleton-container{
+    display:grid;
+    gap: 12px;
+}
+
+.skeleton-card{
+    height: 80px;
+    background: #eee;
+    border-radius: 8px;
+    animation: pulse 1.5s infinite
+}
+
+@keyframes pulse {
+    0%{opacity: 0.6;}
+    50%{opacity: 1;}
+    100%{opacity: 0.6;}
+}
