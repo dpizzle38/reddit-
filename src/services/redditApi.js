@@ -3,7 +3,7 @@ const BASE_URL = 'https://www.reddit.com';
 
 export const fetchPostsByReddit = async(subreddit)=>{
     const response = await axios.get(`${BASE_URL}/r/${subreddit}.json`);     
-    return response.data.data.children.map((p)=> p.data)                                                                                                                                                                                                       z
+    return response.data.data.children.map((p)=> p.data)                                                                                                                                                                                                       
 }
 
 export const searchPosts = async(query)=>{

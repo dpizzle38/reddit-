@@ -1,13 +1,13 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import {
-    fetchPostsBySubreddit,
-    searchPosts,
+    fetchPostsByReddit,
+    searchPosts,                                                             
   } from '../../services/redditApi';
 
 export const loadPosts = createAsyncThunk(
   'posts/loadPosts',
   async (subreddit) => {
-    return await fetchPostsBySubreddit(subreddit)
+    return await fetchPostsByReddit(subreddit)
   }
 );
 
