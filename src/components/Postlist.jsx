@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import Postcard from 'Postcard';
+import Postcard from './Postcard';
 import Loader from './Loader';
 import Error from './Error';
 import { loadPosts } from '../features/posts/postsSlice';

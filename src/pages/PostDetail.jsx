@@ -14,8 +14,8 @@ export default function postDetail(){
 
     loadComments()
   }, [id])
-}
- return(
+
+      return(
     <div>
         <h2>postDetail</h2>
         <h3>comments</h3>
@@ -29,3 +29,5 @@ export default function postDetail(){
     )}
     </div>
  )
+
+}
