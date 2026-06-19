@@ -5,9 +5,9 @@ import Error from './Error';
 import { loadPosts } from '../features/posts/postsSlice';
 
 export default function Postlist(){
-    const {items, loading, error} = useSelector((state)=>state.posts);
+    const {items, isLoading, error} = useSelector((state)=>state.posts);
 
-    if(loading) return <Loader/>
+    if(isLoading) return <Loader/>
     if(error) return <p>Error loading state</p>
     
       const dispatch = useDispatch();

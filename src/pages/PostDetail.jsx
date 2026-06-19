@@ -9,8 +9,8 @@ export default function postDetail(){
   useEffect(()=>{
     const loadComments = async()=>{
     const data = await fetchPostComments(id)
-    setComments(data)
-}
+    setComments(data);
+};
 
     loadComments()
   }, [id])

@@ -1,10 +1,12 @@
 import axios from 'axios';
-const BASE_URL = 'https://www.reddit.com';
+const BASE_URL =  '/reddit';
 
 export const fetchPostsByReddit = async(subreddit)=>{
     const response = await axios.get(`${BASE_URL}/r/${subreddit}.json`);     
-    return response.data.data.children.map((p)=> p.data)                                                                                                                                                                                                       
+    return response.data.data.children.map((p)=> p.data)                                                                                                                                                                                              
 }
+
+ 
 
 export const searchPosts = async(query)=>{
     const response = await axios.get(`${BASE_URL}/search.json?q=${query}`);

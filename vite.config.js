@@ -4,6 +4,16 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    proxy: {
+      '/reddit': {
+        target: 'https://www.reddit.com',
+        changeOrigin: true,
+        secure: true,
+        rewrite: (path) => path.replace(/^\/reddit/, ''),
+      },
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',

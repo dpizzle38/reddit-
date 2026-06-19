@@ -7,6 +7,7 @@ function App() {
   
 
   return (
+    
    <div>
     <Header />
     <Routes>
@@ -14,7 +15,7 @@ function App() {
       <Route path ="/post/:id" element ={<PostDetail/>}/>
     </Routes>
    </div>
-  );
+)
 }
 
 export default App;

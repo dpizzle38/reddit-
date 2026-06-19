@@ -40,7 +40,9 @@ const postsSlice = createSlice({
       .addCase(loadPosts.rejected, (state) => {
         state.isLoading = false;
         state.error = 'Failed to load posts';
-      })
+      })                         
+        
+        
       .addCase(loadSearchResults.fulfilled, (state, action) => {
         state.items = action.payload;
       });
